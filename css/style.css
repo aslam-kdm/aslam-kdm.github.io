@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+ul{
+    list-style: none !important;
+}
+.navs {
+    display: flex;
+    justify-content: space-between;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.Hire-me {
+    padding: 15px;
+    border-radius: 100px;
+    background: linear-gradient(45deg, #fe00ce, #4219cf);
+}
