@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-color: black !important;
+    font-family: "Inter", sans-serif;
 }
 a{
     text-decoration: none !important;
@@ -7,19 +8,262 @@ a{
 }
 ul{
     list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .navs {
     display: flex;
     justify-content: space-between;
-}
-header ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 20px; 
 }
 .Hire-me {
     padding: 15px;
     border-radius: 100px;
-    background: linear-gradient(45deg, #fe00ce, #4219cf);
+    background: linear-gradient(45deg, #D11A84,#4F57DE);
+    border: rgb(255 255 255) solid 1px;
+    width: 100;
+    height: 100%;
+    text-align: center;
+}
+.nav {
+    align-items: center;
+    background: linear-gradient(45deg, #D11A84,#4F57DE);
+    border-radius: 100px;
+    padding: 1px;
+    /* display: flex; */
+    /* height: 52px; */
+    flex-wrap: wrap;
+}
+.navs a{
+    color: white;
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgba(43, 43, 43, 1);
+    border-radius: 100px;
+    height: 50px;
+    /* width: 100%; */
+    max-width: 500px;
+    border: #4c4c4c solid 1px;
+    padding: 0 15px !important;
+    background-color: rgb(43 43 43);
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    
+    
+.nav ul a{
+    text-align: center;
+}
+header {
+    height: 80px;
+    align-items: normal;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* banner */
+
+
+#banner {
+    height: 100vh;
+    background-image: url(/img/hero-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.banner{
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    border: rgba(255, 255, 255, 0.19)solid 1px;
+    padding: 30px;
+    height: 600px;
+
+}
+.banner-cnt{
+    color: white;
+    height: 100%;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download{
+    padding: 15px;
+    border-radius: 100px;
+    background: linear-gradient(45deg, #D11A84,#4F57DE);
+    width: 35%;
+    text-align: center;
+    border: rgb(255 255 255) solid 1px;
+    color: white;
+}
+.banner-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icon-down {
+    display: flex;
+    gap: 2px;
+}
+.img-icons {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    background-color: rgba(9, 9, 9, 1);
+    border-radius: 100px;
+    padding: 5px;
+    border: rgb(255 255 255) solid 1px;
+    width: 350px;
+    margin: auto;
+    position: relative;
+    bottom: 11px;
+}
+#banner-bar{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: rgba(35, 35, 35, 1);
+    color: white;
+    position: relative;
+    bottom: 60px;
+    height: 88px;
+}
+.uiux{
+    display: flex;
+}
+.bar-cnt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+
+/* about */
+
+#about{
+    height: 100vh;
+    background-image: url('../img/about-bg-img.png');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* background-position: top center; */
+    background-position: top -100px left 200px;
+}
+.about {
+    padding-top: 50px;
+}
+.about-heading {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.about {
+    background-color: rgba(23, 23, 23, 0.6);
+    border: rgba(255, 255, 255, 0.2)solid 1px;
+    border-radius: 50px;
+    padding: 10px;
+}
+.about {
+    max-width: max-content;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    padding-top: 30px;
+    position: relative;
+    top: 20px;
+}
+.about-text {
+    color: white;
+    padding-left: 20px;
+}
+.about-cnt {
+position: relative;
+top: 60px;
+}
+.glass {
+    position: relative;
+    bottom: 180px;
+    left: 70px;
+}
+
+
+
+/* skills */
+
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    bottom: 100px;
+}
+.skillz-img-cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.6);
+    border: rgba(255, 255, 255, 0.2)solid 1px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 325px;
+    height: 305px;
+}
+
+.figma-logo img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+.figma-logo {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    overflow: hidden;
+}
+.loading-bar {
+    position: relative;
+    border-radius: 10px;
+    width: 100px;
+    height: 5px;
+    background-color: white;
+}
+.loading-bar-live {
+border-start-start-radius: 10px;
+width: 93px;
+height: 5px;
+background-color: #D11A84;
+}
+.skillz p{
+    color: white;
+}
+.skills-cnt {
+    position: relative;
+    bottom: 80px;
 }
