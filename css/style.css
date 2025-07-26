@@ -216,6 +216,12 @@ top: 60px;
     position: relative;
     bottom: 100px;
 }
+.skills-cnt {
+    position: relative;
+    bottom: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+}
 .skillz-img-cnt {
     display: flex;
     flex-direction: column;
@@ -227,7 +233,7 @@ top: 60px;
     border: rgba(255, 255, 255, 0.2)solid 1px;
     border-radius: 30px;
     padding: 20px;
-    width: 325px;
+    width: 100%;
     height: 305px;
 }
 
@@ -250,20 +256,24 @@ top: 60px;
 .loading-bar {
     position: relative;
     border-radius: 10px;
-    width: 100px;
+    width: 100%;
     height: 5px;
     background-color: white;
 }
 .loading-bar-live {
-border-start-start-radius: 10px;
-width: 93px;
-height: 5px;
-background-color: #D11A84;
+    border-radius: 10px;
+    width: 53%;
+    height: 100%;
+    background-color: #D11A84;
 }
+.loading-bar-live.figma{
+    width: 75%;
+}
+.loading-bar-live.html{
+    width: 90%;
+    background: linear-gradient(45deg, red, blue);
+}
+
 .skillz p{
     color: white;
-}
-.skills-cnt {
-    position: relative;
-    bottom: 80px;
 }
