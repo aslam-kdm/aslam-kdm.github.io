@@ -219,9 +219,31 @@ position: relative;
 top: 60px;
 }
 .glass {
-    position: relative;
-    bottom: 180px;
+    position: absolute;
+    bottom: 113px;
     left: 70px;
+    transition: 0.3s;
+}
+
+.about-lap-img {
+    position: relative;
+}
+
+.about:hover .glass{
+    /* bottom: 120px; */
+    animation: bounce 2s infinite ;
+}
+
+@keyframes bounce {
+    0%{
+        bottom: 113px;
+    }
+    50%{
+        bottom: 125px;
+    }
+    100%{
+        bottom: 113px;
+    }
 }
 
 
@@ -353,11 +375,13 @@ top: 60px;
     background-image: url('../img/education\ bg\ image.png');
     background-repeat: no-repeat;
     background-position:bottom 70px left 200px ;
+    margin-top: 100px;
 }
 .education-heading {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 i.fa-solid.fa-graduation-cap {
     font-size: 30;
@@ -399,6 +423,7 @@ i.fa-solid.fa-graduation-cap {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
     
 }
 .work {
@@ -409,6 +434,7 @@ i.fa-solid.fa-graduation-cap {
     border-radius: 30px;
     color: white;
     padding: 20px;
+    height: 100%;
 }
 .website-name {
     display: flex;
@@ -426,6 +452,9 @@ i.fa-solid.fa-graduation-cap {
     color: white;
     
 }
+.work-photo img{
+    width: 100%;
+}
 .view-project a{
     color: white;
 }
@@ -440,7 +469,8 @@ i.fa-solid.fa-graduation-cap {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;    
+    margin: auto;
+    margin-top: 20px;    
 }
 .more-project a{
     color: white;
@@ -451,6 +481,7 @@ i.fa-solid.fa-graduation-cap {
 
 #contact{
     color: rgba(255, 255, 255, 0.829);
+    margin-top: 100px;
 }
 .contact-head {
     display: flex;
@@ -490,19 +521,24 @@ i.fa-solid.fa-graduation-cap {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.22);
 }
-input.input{
+.input{
     width: 100%;
     background-color: rgba(217, 217, 217, 0.2);
     border: rgba(255, 255, 255, 0.1)solid 1px;
     border-radius: 15px;
-    margin-bottom: 30px;
-    height: 50px;
+    margin-bottom: 10px;
+    /* height: 50px; */
     outline: none;
     padding-left: 10px;
+    color: white;
+    padding: 10px;
 }
 .address{
     color: white;
     padding: 12px 10px;
+}
+.message{
+    margin-top: 20px;
 }
 .all-message {
     padding-top: 60px;
@@ -521,9 +557,12 @@ input.input{
     width: 30%;
     border: rgb(255 255 255) solid 1px;
     color: white;
-    position: relative;
-    left: 510px;   
+    display: inline-block !important;
+    margin: auto;
 }
+
+
+/* footer */
 
 .footer-cnt {
     display: flex;
